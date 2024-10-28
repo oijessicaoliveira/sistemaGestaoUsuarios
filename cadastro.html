@@ -1,0 +1,34 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <title>Cadastro de Usuário</title> <!-- Título da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2>Cadastro de Usuário</h2> <!-- Cabeçalho principal da página -->
+    <form action="cadastro.php" method="POST" enctype="multipart/form-data">
+        <!-- Formulário para enviar dados de cadastro para cadastro.php com suporte para upload de arquivos -->
+
+        <label for="nome">Nome:</label> <!-- Rótulo para o campo do nome -->
+        <input type="text" name="nome" id="nome" required><br> <!-- Campo de texto para o nome do usuário, obrigatório -->
+
+        <label for="email">Email:</label> <!-- Rótulo para o campo do email -->
+        <input type="email" name="email" id="email" required><br> <!-- Campo de texto para o email do usuário, obrigatório -->
+
+        <label for="senha">Senha:</label> <!-- Rótulo para o campo da senha -->
+        <input type="password" name="senha" id="senha" required><br> <!-- Campo de entrada para a senha do usuário, obrigatório -->
+
+        <label for="data_nascimento">Data de Nascimento:</label> <!-- Rótulo para o campo da data de nascimento -->
+        <input type="date" name="data_nascimento" id="data_nascimento" required><br> <!-- Campo de data para o nascimento, obrigatório -->
+
+        <label for="imagem">Imagem de Perfil:</label> <!-- Rótulo para o campo de upload de imagem -->
+        <input type="file" name="imagem" id="imagem"><br> <!-- Campo para selecionar um arquivo de imagem -->
+
+        <label for="is_admin">Administrador:</label> <!-- Rótulo para o campo de escolha de status de administrador -->
+        <input type="checkbox" name="is_admin" id="is_admin"><br> <!-- Checkbox para definir o usuário como administrador -->
+
+        <button type="submit">Cadastrar</button> <!-- Botão para enviar o formulário -->
+    </form>
+</body>
+</html>

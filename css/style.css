@@ -1,0 +1,158 @@
+/* Estilos gerais para todo o projeto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    flex-direction: column;
+}
+
+/* Container central para formulários e páginas */
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do título, fixando no topo e centralizado */
+h2 {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.5em;
+    color: #444;
+    background-color: #f4f4f9;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Espaço para conteúdo sob o título fixo */
+body {
+    padding-top: 80px;
+}
+
+/* Estilo dos formulários */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="file"],
+button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="file"] {
+    border: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus {
+    border-color: #888;
+    outline: none;
+}
+
+/* Estilo específico para botões */
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Estilos para tabelas no painel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Links de navegação */
+a {
+    display: inline-block;
+    margin: 10px 0;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #555;
+}
+
+/* Ajuste adicional para mensagens de sucesso e erro */
+.message {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.success {
+    background-color: #e6f9e6;
+    color: #2e7d32;
+}
+
+.error {
+    background-color: #ffe6e6;
+    color: #c62828;
+}
